@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Assignment 1</title>
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="assignment1.css" />
+</head>
+
+<body>
+   <header>
+      <h1>Share Your Travels</h1>
+      <p>let us know where you've been</p>
+   </header>
+   <main>
+      <section>
+         <form action="http://kunz-pc.sce.carleton.ca/sysc4504/process.php" method="POST">
+            <table>
+               <tr>
+                  <th colspan="2">PHOTO DETAILS</th>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="title">Title</label>
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <input type="text" name="title" placeholder="Give your photo a descriptive name" id="title">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="description">Description</label>
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <textarea name="description" rows="6" id="description"
+                        placeholder="Adding a rich description will help with search results"></textarea>
+                  </td>
+               </tr>
+               <tr>
+                  <td rowspan="2">
+                     <div>
+                        <label for="continent">Continent</label>
+                        <br>
+                        <select name="continent">
+                           <option value="">Choose continent</option>
+                           <option value="Africa">Africa</option>
+                           <option value="Antarctica">Antarctica</option>
+                           <option value="Asia">Asia</option>
+                           <option value="Australia">Australia</option>
+                           <option value="Europe">Europe</option>
+                           <option value="North America">North America</option>
+                           <option value="South America">South America</option>
+                        </select>
+                     </div>
+                     <div>
+                        <label for="country">Country</label>
+                        <br>
+                        <select name="country">
+                           <option value="">Choose continent</option>
+                           <option value="Morocco">Morocco</option>
+                           <option value="India">India</option>
+                           <option value="Norway">Norway</option>
+                           <option value="Canada">Canada</option>
+                           <option value="Brazil">Brazil</option>
+                        </select>
+                     </div>
+                     <div>
+                        <label for="City">City</label>
+                        <div>
+                           <input type="text" name="city" id="city">
+                        </div>
+                     </div>
+                  </td>
+                  <td class="border">
+                     <p>Copyright?</p>
+                     <input type="radio" id="all rights reserved" name="copyright" value="1">
+                     <label for="all rights reserved">All rights reserved</label>
+                     <div>
+                        <input type="radio" id="creative commons" name="copyright" value="2">
+                        <label for="creative Commons">Creative Commons</label>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="border">
+                     <p>Creative Commons Types</p>
+                     <input type="checkbox" id="attribution" name="cc[]" value="1">
+                     <label for="attribution">Attribution</label>
+                     <div>
+                        <input type="checkbox" id="noncommercial" name="cc[]" value="2">
+                        <label for="noncommercial">Noncommercial</label>
+                     </div>
+                     <div>
+                        <input type="checkbox" id="no derivative works" name="cc[]" value="3">
+                        <label for="no derivative works">No Derivative Works</label>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" class="rowfill">
+                     <label for="software license">I accept the software license</label>
+                     <input type="checkbox" id="software license" name="accept">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="rate">Rate this photo: </label>
+                     <div>
+                        <input type="number" min="1" max="5" name="rate">
+                     </div>
+                  </td>
+                  <td rowspan="2" class="border">
+                     <label for="date">Date taken: </label>
+                     <div>
+                        <input type="date" name="date">
+                     </div>
+                     <label for="time">Time taken: </label>
+                     <div>
+                        <input type="time" name="time">
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="color">Color Collection: </label>
+                     <div>
+                        <input type="color" name="color">
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2" class="rowfill">
+                     <input type="submit" class="button">
+                     <input type="reset" value="Clear Form" class="button">
+                  </td>
+               </tr>
+            </table>
+         </form>
+      </section>
+   </main>
+
+
+</body>
+
+</html>
